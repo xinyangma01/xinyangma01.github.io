@@ -85,6 +85,10 @@ nav li {
   font-size: larger;
 }
 
+.navigation li a:hover {
+  color: #f07b3f;
+}
+
 .navigation img {
   display: inline-block;
   vertical-align: middle;

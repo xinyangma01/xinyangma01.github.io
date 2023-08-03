@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Ysabeau+Infant:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2d4059;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: large;
+}
+
+.color-yellow {
+  background-color: #ffd460;
+  padding-bottom: 40px;
+}
+
+.color-white {
+  background-color: #f9ffea;
+  padding-bottom: 40px;
+}
+
+.set-max-width {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+body h3,
+body h5 {
+  font-family: "Courgette", cursive;
+}
+
+body h3 {
+  font-size: xx-large;
+  padding: 30px 0;
+}
+
+body h5 {
+  font-size: larger;
+  padding: 20px 0;
+}
+
+iframe {
+  width: 800px;
+  height: 450px;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  background-color: #f9ffea;
+}
+nav ul {
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 30px;
+  height: 60px;
+  line-height: 60px;
+  list-style-type: none;
+}
+
+.title_desc {
+  background-color: #f07b3f;
+  color: white;
+}
+
+.title_desc span {
+  display: block;
+  text-align: center;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+.navigation img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  padding: 0 40px;
+}
+
+.title_desc .title {
+  font-size: x-large;
+}
+
+.subscribe h5 {
+  font-family: "Ysabeau Infant", sans-serif;
+  text-align: center;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+input[type="email"] {
+  display: block;
+  margin: 30px auto;
+  width: 400px;
+  height: 30px;
+  border: 2px solid #f07b3f;
+  border-radius: 0%;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  background-color: #f07b3f;
+  border: none;
+  border-radius: 0%;
+  color: #f9ffea;
+}
+
+strong {
+  color: #f07b3f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.review h3,
+.writereview h3 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.card {
+  width: 220px;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f9ffea;
+  border: 1.5px solid #f07b3f;
+  box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  box-shadow: 0.4em 0.4em 1.2em rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.card p,
+.card date {
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 0;
+}
+
+.card .uname {
+  font-size: larger;
+}
+
+.card date {
+  display: block;
+  color: grey;
+  font-size: small;
+}
+
+.card .rating {
+  color: #f07b3f;
+}
+
+.card .detail {
+  color: darkorange;
+}
+
+.writereview label,
+.writereview input,
+.writereview textarea {
+  display: block;
+}
+
+form {
+  text-align: center;
+}
+
+.writereview label {
+  color: #f07b3f;
+  font-size: larger;
+}
+
+.writereview input {
+  width: 300px;
+  height: 40px;
+  margin: 20px auto;
+  border: 2px solid #f07b3f;
+  border-radius: 2px;
+}
+
+.writereview textarea {
+  width: 300px;
+  margin: 20px auto;
+  border: 2px solid #f07b3f;
+  border-radius: 2px;
+}
+
+input[type="range"] {
+  accent-color: #f07b3f;
+}
+
+footer div {
+  text-align: center;
+}
+
+#label {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+#rating {
+  margin-bottom: 0;
+}

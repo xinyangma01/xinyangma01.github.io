@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Xinyang Ma" />
+    <title>It takes two</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <div class="title_desc">
+        <span class="title">My Favourite Game</span>
+        <span>
+          <em>All About It Takes Two</em>
+        </span>
+      </div>
+      <div class="navigation">
+        <img src="media/logo.png" alt="" />
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="info.html">INFO</a></li>
+          <li><a href="reviews.html">REVIEW</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="review color-yellow">
+        <h3>Testimonials</h3>
+        <div class="cards set-max-width">
+          <!-- <article class="card">
+            <p class="uname">Sophia Rivers</p>
+            <date>2021-03-24</date>
+            <p class="rating">★★★★☆</p>
+            <p class="detail">
+              The variety of puzzles and challenges kept us entertained, and we
+              never knew what delightful surprise awaited us in the next level.
+            </p>
+          </article> -->
+        </div>
+      </section>
+
+      <section class="writereview color-white">
+        <h3>Write a Review</h3>
+        <form action="" class="set-max-width">
+          <label for="reviewername">NAME</label>
+          <input
+            type="text"
+            name="uname"
+            id="reviewername"
+            placeholder="YOUR NAME HERE"
+            value=""
+            required
+          />
+          <label for="reviewdate">DATE</label>
+          <input type="date" name="date" id="reviewdate" value="" required />
+          <label for="rating">RATING</label>
+          <input
+            type="range"
+            name="rating"
+            id="rating"
+            value=""
+            min="1"
+            max="5"
+            list="values"
+            required
+          />
+          <datalist id="values">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+          </datalist>
+          <div id="label">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <label for="reviewdetail">COMMENTS</label>
+          <textarea
+            name="review"
+            id="reviewdetail"
+            cols="30"
+            rows="10"
+            placeholder="YOUR REVIEW HERE"
+            required
+          ></textarea>
+          <input type="submit" name="submit" value="CREATE" id="submitreview" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div>© 2023 Xinyang Ma. WEB222 Final Project. Created at Aug 2, 2023</div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

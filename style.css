@@ -137,7 +137,7 @@ strong {
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-flow: row wrap;
 }
 
@@ -260,10 +260,6 @@ footer div {
 
   input[type="email"] {
     width: 300px;
-  }
-
-  .cards {
-    justify-content: space-evenly;
   }
 
   .card {

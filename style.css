@@ -17,7 +17,7 @@ body {
 }
 
 .color-white {
-  background-color: #f9ffea;
+  background-color: #fffcea;
   padding-bottom: 40px;
 }
 
@@ -51,7 +51,7 @@ img {
 }
 
 nav {
-  background-color: #f9ffea;
+  background-color: #fffcea;
 }
 nav ul {
   display: inline-block;
@@ -118,7 +118,7 @@ input[type="submit"] {
   background-color: #f07b3f;
   border: none;
   border-radius: 0%;
-  color: #f9ffea;
+  color: #fffcea;
 }
 
 strong {
@@ -142,7 +142,7 @@ strong {
   height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: #f9ffea;
+  background-color: #fffcea;
   border: 1.5px solid #f07b3f;
   box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.3);
 }
@@ -236,6 +236,10 @@ footer div {
     padding-right: 0;
   }
 
+  .navigation ul {
+    margin-left: 14px;
+  }
+
   .navigation li {
     margin: 0 3px;
   }
@@ -261,6 +265,10 @@ footer div {
   .card {
     width: 300px;
     height: 200px;
+  }
+
+  .references p {
+    font-size: small;
   }
 
   footer {

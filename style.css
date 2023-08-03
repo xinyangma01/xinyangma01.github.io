@@ -75,6 +75,10 @@ nav li {
   text-align: center;
 }
 
+.logolink {
+  display: inline-block;
+}
+
 .navigation li a {
   text-decoration: none;
   color: black;

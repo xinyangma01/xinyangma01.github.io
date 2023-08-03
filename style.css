@@ -226,3 +226,44 @@ footer div {
 #rating {
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 400px) {
+  .navigation {
+    font-size: small;
+  }
+  .navigation img {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  .navigation li {
+    margin: 0 3px;
+  }
+
+  iframe {
+    width: 350px;
+    height: 197px;
+  }
+
+  .set-max-width {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  input[type="email"] {
+    width: 300px;
+  }
+
+  .cards {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 300px;
+    height: 200px;
+  }
+
+  footer {
+    font-size: x-small;
+  }
+}

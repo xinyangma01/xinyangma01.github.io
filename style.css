@@ -238,7 +238,7 @@ footer div {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   .navigation {
     font-size: small;
   }

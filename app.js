@@ -47,6 +47,10 @@ review.addEventListener("click", function (e) {
     submitReview(reviewData);
     createCard(reviewData);
     clearData();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
   }
 });
 

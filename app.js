@@ -36,10 +36,18 @@ const createCard = (reviewData) => {
 
 const review = document.querySelector("#submitreview");
 review.addEventListener("click", function (e) {
-  e.preventDefault();
-  clear(reviewData);
-  submitReview(reviewData);
-  createCard(reviewData);
+  if (
+    document.querySelector("#reviewername").value != "" &&
+    document.querySelector("#reviewdate").value != "" &&
+    document.querySelector("#rating").value != "" &&
+    document.querySelector("#reviewdetail").value != ""
+  ) {
+    e.preventDefault();
+    clearCard(reviewData);
+    submitReview(reviewData);
+    createCard(reviewData);
+    clearData();
+  }
 });
 
 const submitReview = (reviewData) => {
@@ -51,10 +59,17 @@ const submitReview = (reviewData) => {
   reviewData.push(newReview);
 };
 
-const clear = (reviewData) => {
+const clearCard = (reviewData) => {
   const cards = document.querySelector(".cards");
   const card = document.querySelectorAll(".card");
   for (let i = 0; i < reviewData.length; i++) {
     cards.removeChild(card[i]);
   }
+};
+
+const clearData = () => {
+  document.querySelector("#reviewername").value = "";
+  document.querySelector("#reviewdate").value = "";
+  document.querySelector("#rating").value = "";
+  document.querySelector("#reviewdetail").value = "";
 };

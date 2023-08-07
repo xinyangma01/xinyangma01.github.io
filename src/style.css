@@ -17,12 +17,12 @@ body {
 }
 
 .color-white {
-  background-color: #f9ffea;
+  background-color: #fffcea;
   padding-bottom: 40px;
 }
 
 .set-max-width {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -42,8 +42,8 @@ body h5 {
 }
 
 iframe {
-  width: 800px;
-  height: 450px;
+  width: 1000px;
+  height: 563px;
 }
 
 img {
@@ -51,8 +51,9 @@ img {
 }
 
 nav {
-  background-color: #f9ffea;
+  background-color: #fffcea;
 }
+
 nav ul {
   display: inline-block;
 }
@@ -75,10 +76,18 @@ nav li {
   text-align: center;
 }
 
+.logolink {
+  display: inline-block;
+}
+
 .navigation li a {
   text-decoration: none;
   color: black;
   font-size: larger;
+}
+
+.navigation li a:hover {
+  color: #f07b3f;
 }
 
 .navigation img {
@@ -118,7 +127,8 @@ input[type="submit"] {
   background-color: #f07b3f;
   border: none;
   border-radius: 0%;
-  color: #f9ffea;
+  color: #fffcea;
+  cursor: pointer;
 }
 
 strong {
@@ -133,22 +143,22 @@ strong {
 
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-flow: row wrap;
 }
 
 .card {
-  width: 220px;
+  width: 250px;
   height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: #f9ffea;
+  background-color: #fffcea;
   border: 1.5px solid #f07b3f;
   box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
-  box-shadow: 0.4em 0.4em 1.2em rgba(0, 0, 0, 0.3);
+  box-shadow: 0.4em 0.4em 1.2em rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease-in-out;
 }
 
@@ -156,7 +166,7 @@ strong {
 .card date {
   text-align: center;
   margin-top: 5px;
-  padding-bottom: 0;
+  padding: 0 15px;
 }
 
 .card .uname {
@@ -201,7 +211,8 @@ form {
 }
 
 .writereview textarea {
-  width: 300px;
+  width: 500px;
+  height: 200px;
   margin: 20px auto;
   border: 2px solid #f07b3f;
   border-radius: 2px;
@@ -209,6 +220,7 @@ form {
 
 input[type="range"] {
   accent-color: #f07b3f;
+  cursor: pointer;
 }
 
 footer div {
@@ -225,4 +237,53 @@ footer div {
 
 #rating {
   margin-bottom: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .navigation {
+    font-size: small;
+  }
+  .navigation img {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  .navigation ul {
+    margin-left: 14px;
+  }
+
+  .navigation li {
+    margin: 0 3px;
+  }
+
+  iframe {
+    width: 350px;
+    height: 197px;
+  }
+
+  .set-max-width {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  input[type="email"] {
+    width: 300px;
+  }
+
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+
+  .writereview textarea {
+    width: 300px;
+  }
+
+  .references p {
+    font-size: small;
+  }
+
+  footer {
+    font-size: x-small;
+  }
 }

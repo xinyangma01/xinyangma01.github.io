@@ -150,6 +150,7 @@ strong {
 .card {
   width: 250px;
   height: 250px;
+  overflow: scroll;
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: #fffcea;
